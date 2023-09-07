@@ -1,6 +1,6 @@
 
 ![Scheme|30%](fiuner.png)
-#Cátedra: Electrónica Programable
+# Cátedra: Electrónica Programable
 -----------
 
  *  [Campus Virtual de la Cátedra](http://campus.ingenieria.uner.edu.ar/course/view.php?id=190)
