@@ -1,0 +1,57 @@
+{
+    "folders": [
+        {
+            "path": "./drivers"
+        },
+        {
+            "path": "./projects/0_blinking"
+        },
+        {
+            "path": "./projects/1_blinking_switch"
+        },
+        {
+            "path": "projects/x_template"
+        }
+    ],
+    "settings": {
+        "idf.portWin": "COM9",
+        "idf.flashBaudRate": "115200",
+        "idf.flashType": "JTAG",
+        "idf.adapterTargetName": "esp32",
+        "cmake.configureOnOpen": false,
+        "idf.openOcdConfigs": [
+            "board/esp32-wrover-kit-3.3v.cfg"
+        ],
+        "idf.openOcdLaunchArgs": ["-c", "set ESP_RTOS none"],
+        "files.associations": {
+            "math.h": "c",
+            "stdint.h": "c",
+            "stdbool.h": "c",
+            "gpio_mcu.h": "c",
+            "gpio.h": "c",
+            "switch.h": "c"
+        },
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Run OpenOCD",
+                "type": "shell",
+                "windows":{
+                    "command": "openocd -c 'set ESP_RTOS none' -f board/esp32-wrover-kit-3.3v.cfg",
+                    "options": {
+                        "env": {
+                            "PATH": "${env:PATH};${config:idf.customExtraPaths}"
+                        }   
+                    }            
+                },
+                "options": {
+                    "env": {
+                        "PATH": "${env:PATH}:${config:idf.customExtraPaths}"
+                    }
+                }
+            },
+        ]
+    }
+  }
