@@ -7,7 +7,11 @@
             "request": "launch",
             "cwd": "${workspaceFolder}/build",
             "program": "${workspaceFolder}/build/${command:espIdf.getProjectName}.elf",
-            "miDebuggerPath": "C:\\Espressif\\tools\\xtensa-esp-elf-gdb\\12.1_20221002\\xtensa-esp-elf-gdb\\bin\\xtensa-esp32-elf-gdb.exe",
+            "windows": {
+              "program": "${workspaceFolder}\\build\\${command:espIdf.getProjectName}.elf"
+            },
+            "environment": [{ "name": "PATH", "value": "${config:idf.customExtraPaths}" }],
+            "miDebuggerPath": "${command:espIdf.getXtensaGdb}",
             "setupCommands": [
                 {"text": "target remote 127.0.0.1:3333" },
                 {"text": "set remote hardware-watchpoint-limit 2"},
