@@ -43,14 +43,9 @@ int8_t SwitchesRead(void);
  * @param[in] gp Indicates to which group of interrupts the key is assigned
  * @param[in] tec Key that will interrupt
  * @param[in] ptrIntFunc Function to be called in the interruption
+ * @param[in] args parámetros para la función de interrupción
  */
-void SwitchActivInt(switch_t tec, void *ptrIntFunc);
-
-/** @brief Activate group interrupts and add to the interruption the chosen keys through the mask
- * @param[in] tecs Mask of keys that will be added to the group to interrupt. Where bit0-TEC4, bit1-TEC3, bit2-TEC2 and bit4-TEC1.
- * @param[in] void * Function to be called in the interruption.
- */
-void SwitchesActivGroupInt(switch_t tecs, void *ptrIntFunc);
+void SwitchActivInt(switch_t tec, void *ptrIntFunc, void *args);
 
 /** @} doxygen end group definition */
 /** @} doxygen end group definition */

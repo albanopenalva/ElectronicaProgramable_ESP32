@@ -89,6 +89,14 @@ void GPIOToggle(gpio_t pin);
  */
 bool GPIORead(gpio_t pin);
 
+/** @brief Activa la interrupcion de un pin en particular 
+ * @param[in] pin Pin que va a interrumpir
+ * @param[in] void *ptr_int_func Funcion a la que se va a llamar en la interrupcion
+ * @param[in] bool edge 1 si es flanco ascendente y 0 si es descendente
+ * @param[in] args parámetros para la función de interrupción
+ */
+void GPIOActivInt(gpio_t pin, void *ptr_int_func, bool edge, void *args);
+
 /** @brief Deinicializacion de los puertos GPIO de la EDU-CIAA
  */
 void GPIODeinit(void);

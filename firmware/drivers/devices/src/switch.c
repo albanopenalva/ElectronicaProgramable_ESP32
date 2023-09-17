@@ -39,13 +39,23 @@ int8_t SwitchesRead(void){
 	return mask;
 }
 
-void SwitchActivInt(switch_t sw, void *ptr_int_func){
-	
+void SwitchActivInt(switch_t sw, void *ptr_int_func, void *args){
+	switch(sw){
+		case SWITCH_1:
+			GPIOActivInt(GPIO_SWITCH1, ptr_int_func, false, args);
+		break;
+		case SWITCH_2:
+			GPIOActivInt(GPIO_SWITCH2, ptr_int_func, false, args);
+		break;
+		case SWITCH_3:
+			GPIOActivInt(GPIO_SWITCH3, ptr_int_func, true, args);
+		break;
+		case SWITCH_4:
+
+		break;
+	}
 }
 
-void SwitchesActivGroupInt(switch_t switchs, void *ptr_int_func){
-	
-}
 
 /** @} doxygen end group definition */
 /** @} doxygen end group definition */

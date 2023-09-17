@@ -6,6 +6,7 @@
 #include <stdint.h>
 #include "driver/gpio.h"
 /*==================[macros and definitions]=================================*/
+#define GPIO_QTY 26
 typedef struct{
 	uint64_t pin;				/*!< GPIO pin */
 	gpio_mode_t mode;			/*!< Input/Output mode */
@@ -17,7 +18,7 @@ typedef struct{
 /*==================[internal functions declaration]=========================*/
 
 /*==================[internal data definition]===============================*/
-digital_io_t gpio_list[] = {
+digital_io_t gpio_list[GPIO_QTY] = {
 	{GPIO_NUM_0, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO0*/
 	{GPIO_NUM_1, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO1*/
 	{GPIO_NUM_2, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO2*/
@@ -45,6 +46,7 @@ digital_io_t gpio_list[] = {
 	{GPIO_NUM_36, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO36*/
 	{GPIO_NUM_39, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO39*/
 };
+void (*ptr_GPIO_int_func[GPIO_QTY])(); /**< Pointer to the function to be called at the interruption of each GPIO */
 /*==================[external data definition]===============================*/
 
 /*==================[internal functions definition]==========================*/
@@ -83,6 +85,16 @@ void GPIOToggle(gpio_t pin){
 
 bool GPIORead(gpio_t pin){
 	return gpio_get_level(gpio_list[pin].pin);
+}
+
+void GPIOActivInt(gpio_t pin, void *ptr_int_func, bool edge, void *args){
+	if(edge){
+		gpio_set_intr_type(pin, GPIO_INTR_POSEDGE);
+	} else{
+		gpio_set_intr_type(pin, GPIO_INTR_NEGEDGE);
+	}	
+	gpio_install_isr_service(0);
+    gpio_isr_handler_add(pin, ptr_int_func, (void *)args);	
 }
 
 void GPIODeinit(void){
