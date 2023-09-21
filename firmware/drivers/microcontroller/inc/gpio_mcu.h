@@ -1,5 +1,5 @@
-#ifndef INC_GPIO_H_
-#define INC_GPIO_H_
+#ifndef GPIO_MCU_H
+#define GPIO_MCU_H
 /** \addtogroup Drivers_Programable Drivers Programable
  ** @{ */
 /** \addtogroup Drivers_Microcontroller Drivers microcontroller

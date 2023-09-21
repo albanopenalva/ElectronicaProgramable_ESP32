@@ -4,6 +4,7 @@ idf_build_get_property(target IDF_TARGET)
 set(srcs
     "microcontroller/src/gpio_mcu.c"
     "microcontroller/src/delay_mcu.c"
+    "microcontroller/src/timer_mcu.c"
     "devices/src/led.c"
     "devices/src/switch.c"
     "devices/src/lcditse0803.c"

@@ -1,3 +1,5 @@
+#ifndef DELAY_MCU_H
+#define DELAY_MCU_H
 /** \addtogroup Drivers_Programable Drivers Programable
  ** @{ */
 /** \addtogroup Drivers_Devices Drivers devices
@@ -20,8 +22,6 @@
  *
  */
 
-#ifndef DELAY_H_
-#define DELAY_H_
 /*==================[inclusions]=============================================*/
 #include <stdint.h>
 /*==================[macros]=================================================*/
