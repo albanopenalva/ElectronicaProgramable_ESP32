@@ -13,11 +13,13 @@
             "environment": [{ "name": "PATH", "value": "${config:idf.customExtraPaths}" }],
             "miDebuggerPath": "${command:espIdf.getXtensaGdb}",
             "setupCommands": [
-                {"text": "target remote 127.0.0.1:3333" },
-                {"text": "set remote hardware-watchpoint-limit 2"},
-                {"text": "monitor reset halt"},
-                {"text": "flushregs"}
-            ]
+              {"text": "target remote 127.0.0.1:3333" },
+              {"text": "set remote hardware-watchpoint-limit 2"},
+              {"text": "mon reset halt"},
+              {"text": "maintenance flush register-cache"},
+              {"text": "thb app_main"},
+              {"text": "flushregs" },
+            ],
         }
     ]
 }

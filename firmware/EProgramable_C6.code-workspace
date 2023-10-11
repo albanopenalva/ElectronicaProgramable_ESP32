@@ -1,0 +1,64 @@
+{
+    "folders": [
+        {
+            "path": "./drivers"
+        },
+        {
+            "path": "./projects/0_blinking"
+        },
+        {
+            "path": "./projects/1_blinking_switch"
+        },
+        {
+            "path": "projects/x_template"
+        }
+    ],
+    "settings": {
+        "idf.portWin": "COM14",
+        "idf.flashBaudRate": "115200",
+        "idf.flashType": "JTAG",
+        "idf.adapterTargetName": "esp32c6",
+        "cmake.configureOnOpen": false,
+        "idf.openOcdConfigs": [
+            "board/esp32c6-builtin.cfg"
+        ],
+        "idf.openOcdLaunchArgs": ["-c", "set ESP_RTOS none"],
+        "files.associations": {
+            "math.h": "c",
+            "stdint.h": "c",
+            "stdbool.h": "c",
+            "gpio_mcu.h": "c",
+            "gpio.h": "c",
+            "switch.h": "c",
+            "esp_rom_sys.h": "c",
+            "lcditse0803.h": "c",
+            "timer.h": "c",
+            "gptimer.h": "c",
+            "delay_mcu.h": "c",
+            "hc_sr04.h": "c",
+            "timer_mcu.h": "c"
+        },
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Run OpenOCD",
+                "type": "shell",
+                "windows":{
+                    "command": "openocd -c 'set ESP_RTOS none' -f board/esp32-wrover-kit-3.3v.cfg",
+                    "options": {
+                        "env": {
+                            "PATH": "${env:PATH};${config:idf.customExtraPaths}"
+                        }   
+                    }            
+                },
+                "options": {
+                    "env": {
+                        "PATH": "${env:PATH}:${config:idf.customExtraPaths}"
+                    }
+                }
+            },
+        ]
+    }
+}
