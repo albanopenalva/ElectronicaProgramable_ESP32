@@ -11,8 +11,8 @@
 #define GPIO_BCD_3	GPIO_4
 #define GPIO_BCD_4	GPIO_2
 #define GPIO_SEL_1	GPIO_19
-#define GPIO_SEL_2	GPIO_26
-#define GPIO_SEL_3	GPIO_27
+#define GPIO_SEL_2	GPIO_22
+#define GPIO_SEL_3	GPIO_23
 /*==================[internal data definition]===============================*/
 
 /*==================[internal functions declaration]=========================*/

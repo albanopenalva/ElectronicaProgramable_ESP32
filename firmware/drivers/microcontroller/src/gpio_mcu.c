@@ -1,12 +1,20 @@
-/** \addtogroup GIOP
- ** @{
-*/
+/**
+ * @file gpio_mcu.c
+ * @author Albano Peñalva (albano.penalva@uner.edu.ar)
+ * @brief 
+ * @version 0.1
+ * @date 2023-10-20
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
+
 /*==================[inclusions]=============================================*/
 #include "gpio_mcu.h"
 #include <stdint.h>
 #include "driver/gpio.h"
 /*==================[macros and definitions]=================================*/
-#define GPIO_QTY 26
+#define GPIO_QTY 22
 typedef struct{
 	uint64_t pin;				/*!< GPIO pin */
 	gpio_mode_t mode;			/*!< Input/Output mode */
@@ -25,9 +33,14 @@ digital_io_t gpio_list[GPIO_QTY] = {
 	{GPIO_NUM_3, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO3*/
 	{GPIO_NUM_4, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO4*/
 	{GPIO_NUM_5, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO5*/
+	{GPIO_NUM_6, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO6*/
+	{GPIO_NUM_7, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO7*/
+	{GPIO_NUM_8, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO8*/
+	{GPIO_NUM_9, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO9*/
+	{GPIO_NUM_10, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO10*/
+	{GPIO_NUM_11, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO11*/
 	{GPIO_NUM_12, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO12*/
 	{GPIO_NUM_13, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO13*/
-	{GPIO_NUM_14, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO14*/
 	{GPIO_NUM_15, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO15*/
 	{GPIO_NUM_16, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO16*/
 	{GPIO_NUM_17, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO17*/
@@ -36,15 +49,6 @@ digital_io_t gpio_list[GPIO_QTY] = {
 	{GPIO_NUM_21, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO21*/
 	{GPIO_NUM_22, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO22*/
 	{GPIO_NUM_23, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO23*/
-	{GPIO_NUM_25, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO25*/
-	{GPIO_NUM_26, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO26*/
-	{GPIO_NUM_27, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO27*/
-	{GPIO_NUM_32, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO32*/
-	{GPIO_NUM_33, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO33*/
-	{GPIO_NUM_34, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO34*/
-	{GPIO_NUM_35, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO35*/
-	{GPIO_NUM_36, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO36*/
-	{GPIO_NUM_39, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO39*/
 };
 /*==================[external data definition]===============================*/
 

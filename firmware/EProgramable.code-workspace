@@ -29,7 +29,14 @@
             "stdbool.h": "c",
             "gpio_mcu.h": "c",
             "gpio.h": "c",
-            "switch.h": "c"
+            "switch.h": "c",
+            "esp_rom_sys.h": "c",
+            "lcditse0803.h": "c",
+            "timer.h": "c",
+            "gptimer.h": "c",
+            "delay_mcu.h": "c",
+            "hc_sr04.h": "c",
+            "timer_mcu.h": "c"
         },
     },
     "tasks": {
@@ -54,4 +61,4 @@
             },
         ]
     }
-  }
+}

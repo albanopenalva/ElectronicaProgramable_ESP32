@@ -1,14 +1,21 @@
-﻿/** @brief Bare Metal driver for switchs in the EDU-CIAA board.
- **
- **/
+﻿/**
+ * @file switch.c
+ * @author Albano Peñalva (albano.penalva@uner.edu.ar)
+ * @brief 
+ * @version 0.1
+ * @date 2023-10-20
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 
 /*==================[inclusions]=============================================*/
 #include "switch.h"
 #include "gpio_mcu.h"
 /*==================[macros and definitions]=================================*/
-#define GPIO_SWITCH1 GPIO_32
-#define GPIO_SWITCH2 GPIO_33
-#define GPIO_SWITCH3 GPIO_25
+#define GPIO_SWITCH1 GPIO_5
+#define GPIO_SWITCH2 GPIO_6
+#define GPIO_SWITCH3 GPIO_7
 /*==================[internal data declaration]==============================*/
 
 /*==================[internal functions declaration]=========================*/

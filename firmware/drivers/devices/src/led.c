@@ -3,9 +3,9 @@
 #include "led.h"
 #include "gpio_mcu.h"
 /*==================[macros and definitions]=================================*/
-#define GPIO_LED1 GPIO_21
+#define GPIO_LED1 GPIO_23
 #define GPIO_LED2 GPIO_22
-#define GPIO_LED3 GPIO_23
+#define GPIO_LED3 GPIO_21
 /*==================[internal data declaration]==============================*/
 
 /*==================[internal functions declaration]=========================*/
