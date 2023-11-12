@@ -36,7 +36,16 @@
             "gptimer.h": "c",
             "delay_mcu.h": "c",
             "hc_sr04.h": "c",
-            "timer_mcu.h": "c"
+            "timer_mcu.h": "c",
+            "led_strip.h": "c",
+            "freertos.h": "c",
+            "task.h": "c",
+            "semphr.h": "c",
+            "queue.h": "c",
+            "rmt.h": "c",
+            "rmt_types_legacy.h": "c",
+            "dedic_gpio.h": "c",
+            "neopixel_stripe.h": "c"
         },
     },
     "tasks": {

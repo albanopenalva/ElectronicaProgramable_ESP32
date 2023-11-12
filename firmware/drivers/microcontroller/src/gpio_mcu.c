@@ -14,7 +14,7 @@
 #include <stdint.h>
 #include "driver/gpio.h"
 /*==================[macros and definitions]=================================*/
-#define GPIO_QTY 22
+#define GPIO_QTY 24
 typedef struct{
 	uint64_t pin;				/*!< GPIO pin */
 	gpio_mode_t mode;			/*!< Input/Output mode */
@@ -41,11 +41,13 @@ digital_io_t gpio_list[GPIO_QTY] = {
 	{GPIO_NUM_11, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO11*/
 	{GPIO_NUM_12, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO12*/
 	{GPIO_NUM_13, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO13*/
+	{GPIO_NUM_14, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO14*/
 	{GPIO_NUM_15, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO15*/
 	{GPIO_NUM_16, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO16*/
 	{GPIO_NUM_17, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO17*/
 	{GPIO_NUM_18, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO18*/
 	{GPIO_NUM_19, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO19*/
+	{GPIO_NUM_20, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO20*/
 	{GPIO_NUM_21, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO21*/
 	{GPIO_NUM_22, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO22*/
 	{GPIO_NUM_23, GPIO_MODE_DISABLE, GPIO_PULLUP_ONLY, false}, /* Configuration GPIO23*/

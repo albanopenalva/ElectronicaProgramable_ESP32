@@ -17,10 +17,11 @@
  * @brief  
  */
 typedef enum {GPIO_INPUT = 0, GPIO_OUTPUT} io_t;
+
 /** @typedef gpio_t
- * @brief  Define los puertos de la EDU-CIAA
+ *  @brief  Define los puertos de la EDU-CIAA
  */
-typedef enum {
+typedef enum gpio_list{
 	GPIO_0=0, /**<  */
 	GPIO_1, /**<  */
 	GPIO_2, /**<  */
@@ -35,11 +36,13 @@ typedef enum {
 	GPIO_11, /**<  */
 	GPIO_12, /**<  */
 	GPIO_13, /**<  */
+	GPIO_14, /**<  */
 	GPIO_15, /**<  */
 	GPIO_16, /**<  */
 	GPIO_17, /**<  */
 	GPIO_18, /**<  */
 	GPIO_19, /**<  */
+	GPIO_20, /**<  */
 	GPIO_21, /**<  */
 	GPIO_22, /**<  */
 	GPIO_23, /**<  */
@@ -71,6 +74,13 @@ void GPIOOff(gpio_t pin);
  * @param[in] state Estado del pin (1: prendido o 0: apagado)
  */
 void GPIOState(gpio_t pin, bool state);
+
+/** @fn void GPIOStateFast(gpio_t pin)
+ * @brief Indica el estado de un pin de la EDU-CIAA
+ * @param[in] pin Pin que se desea prender o apagar
+ * @param[in] state Estado del pin (1: prendido o 0: apagado)
+ */
+void GPIOStateFast(gpio_t pin, bool state);
 
 /** @fn void GPIOToggle(gpio_t pin)
  * @brief Invierte el estado de un pin de la EDU-CIAA

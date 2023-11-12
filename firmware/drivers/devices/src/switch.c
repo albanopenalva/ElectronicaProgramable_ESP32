@@ -62,9 +62,4 @@ void SwitchActivInt(switch_t sw, void *ptr_int_func, void *args){
 		break;
 	}
 }
-
-
-/** @} doxygen end group definition */
-/** @} doxygen end group definition */
-/** @} doxygen end group definition */
 /*==================[end of file]============================================*/
