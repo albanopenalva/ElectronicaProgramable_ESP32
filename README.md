@@ -5,11 +5,21 @@
 
  *  [Campus Virtual de la Cátedra](http://campus.ingenieria.uner.edu.ar/course/view.php?id=190)
 
+-----------
 
-**Autores:** 
+## Primeros pasos
 
- *  Juan Manuel Reta (juan.reta@uner.edu.ar)
- *  Eduardo Filomena (eduardo.filomena@uner.edu.ar)
- *  Juan Ignacio Cerrudo (juan.cerrudo@uner.edu.ar)
- *  Albano Peñalva (albano.penalva@uner.edu.ar)
- *  Lucía Eletti (lucia.eletti@uner.edu.ar )
+1. [Instalación](./documentación/instalación.md)
+2. [Compilación](./documentación/compilación.md)
+3. [Depuración](./documentación/depuración.md)
+
+-----------
+
+## Autores
+
+* Juan Manuel Reta (juan.reta@uner.edu.ar)
+* Eduardo Filomena (eduardo.filomena@uner.edu.ar)
+* Juan Ignacio Cerrudo (juan.cerrudo@uner.edu.ar)
+* Albano Peñalva (albano.penalva@uner.edu.ar)
+* Lucía Eletti (lucia.eletti@uner.edu.ar )
+* Diego Arévalo (diego.arevalo@uner.edu.ar)
