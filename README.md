@@ -11,7 +11,7 @@
 
 1. [Instalación](./documentación/instalación.md)
 2. [Compilación](./documentación/compilación.md)
-3. [Depuración](./documentación/depuración.md)
+3. [Grabación y Depuración](./documentación/depuración.md)
 
 -----------
 

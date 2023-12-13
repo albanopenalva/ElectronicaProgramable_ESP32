@@ -1,1 +1,5 @@
-# Depuración 
+# Grabación y Depuración 
+
+## Grabación
+
+## Depuración
