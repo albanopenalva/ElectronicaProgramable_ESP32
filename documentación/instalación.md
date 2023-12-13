@@ -52,33 +52,34 @@ Para su instalación siga los siguietes pasos:
 
 2. Busque la extensión de ESP-IDF (use palabras clave como `espressif`, `esp-idf`, `esp32`, etc).
 
-3. Presione el botón **Install**.
+3. Presione el botón `Install`.
 
-[idf1](./imágenes/idf1.png)
+![idf1](./imágenes/idf1.png)
 
 4. Seleccionar el menú "View" -> "Command Palette" y escribir `configure esp-idf`. 
 
-[idf2](./imágenes/idf2.png)
+[!idf2](./imágenes/idf2.png)
 
-5. Elegir la opción **ESP-IDF: Configure ESP-IDF Extension**.
+5. Elegir la opción `ESP-IDF: Configure ESP-IDF Extension`.
 
-[idf3](./imágenes/idf3.png)
+![idf3](./imágenes/idf3.png)
 
-6. En el menú siguiente seleccionar la opción **Express**.
+6. En el menú siguiente seleccionar la opción `Express`.
 
-[idf4](./imágenes/idf4.png)
+![idf4](./imágenes/idf4.png)
 
 7. A continuación se le mostrarán las opciones de instalación:
-   - Versión: seleccionar v5.1.2 o superior.
-   - Directorio de ESP-IDF: por defecto %USERPROFILE%\esp
-   - Directorio de ESP-IDF Tools:  por defecto %USERPROFILE%\.espressif
-Una vez seleccionadas presione el botón **Install**.
-> **NOTA:** Asegúrese que los path a ambas carpetas no contengan espacios o la letra "ñ".
+   - Versión: seleccionar `v5.1.2` o superior.
+   - Directorio de ESP-IDF: por defecto `%USERPROFILE%\esp`
+   - Directorio de ESP-IDF Tools:  por defecto `%USERPROFILE%\.espressif`
+   
+Una vez seleccionadas presione el botón `Install`.
+> **NOTA:** Asegúrese que los path de ambas carpetas no contengan `espacio` o la letra `ñ`.
 
-[idf5](./imágenes/idf5.png)
+![idf5](./imágenes/idf5.png)
 
 8. La instalación demorará varios minutos. Una vez completada podrá observar un mensaje indicando que todos los ajustes han sido configurados.
 
-[idf6](./imágenes/idf6.png)
+![idf6](./imágenes/idf6.png)
 
-Una vez finalizada la instalación de las herramientas puede continuar con el instructivo de [Compilación](./documentación/compilación.md).
+Una vez finalizada la instalación de las herramientas puede continuar con el instructivo de [Compilación](./compilación.md).
