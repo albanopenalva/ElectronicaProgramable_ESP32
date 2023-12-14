@@ -4,6 +4,7 @@ Para las prácticas de laboratorio se utilizará la placa ESP32-C6-DevKitC-1 com
 Para que este último sea capaz de programar la placa de desarrollo es necesario descargar componentes de software adicionales. 
 Además, es necesario descargar la herramienta Git para trabajar con repositorios como lo haremos en el cursado. 
 A continuación se detallan los pasos necesarios para la instalación de estas herramientas:
+
 1. [Git](#Git)
 2. [Doxygen](#Doxygen)
 3. [Visual Studio Code](#Visual-Studio-Code)
@@ -58,7 +59,7 @@ Para su instalación siga los siguietes pasos:
 
 4. Seleccionar el menú "View" -> "Command Palette" y escribir `configure esp-idf`. 
 
-[!idf2](./imágenes/idf2.png)
+![idf2](./imágenes/idf2.png)
 
 5. Elegir la opción `ESP-IDF: Configure ESP-IDF Extension`.
 
