@@ -21,7 +21,7 @@ A continuación se detallan los pasos para la descarga del repositorio de la cá
 
 4. A continuación se descargará el Repositorio en la carpeta correspondiente.
 
-![clone](./imágenes/clone.png)
+    ![clone](./imágenes/clone.png)
 
 ## Configuración del Espacio de Trabajo
 
@@ -67,7 +67,7 @@ Si el directorio mostrado no existe, corrijalo por el valor correcto.
 
     > **NOTA:** No se preocupe si el programa le muestra un error en el macro `portTICK_PERIOD_MS`, el mismo desaparecerá luego de la primera compilación.
 
-5. Para compilar el proyecto, presione el botón `ESP-IDF: Build project`. Aparecerá una notificación de que el proyecto está siendo compilado.
+5. Para compilar el proyecto, presione el botón `ESP-IDF Build project`. Aparecerá una notificación de que el proyecto está siendo compilado.
 
     ![workspace6](./imágenes/workspace6.png)
 	> **NOTA:** La primera compilación de un proyecto puede tomar varios minutos.
