@@ -34,7 +34,7 @@ Los paquetes para linux tienen la extensión “tar.gz”, “.dmg” para mac O
 A continuación se observa la ventana inicial del instalador para este último sistema operativo. 
 Seleccione las opciones por defecto y presione instalar. 
 
-    ![doxygen](./imágenes/doxygen.png)
+![doxygen](./imágenes/doxygen.png)
 
 ## Visual Studio Code
 
@@ -42,7 +42,7 @@ Visual Studio Code es un IDE y editor de código desarrollado por Microsoft con 
 Para descargarlo ingrese a la siguiete [página](https://code.visualstudio.com/) y elija la versión correspondiente a su sistema operativo.
 Al ejecutar el instalador aparecerá la pantalla que se observa en la siguiente figura. Acepte las condiciones e instale seleccionando las opciones por defecto.
 
-    ![vscode](./imágenes/vscode.png)
+![vscode](./imágenes/vscode.png)
 
 ## ESP-IDF
 
