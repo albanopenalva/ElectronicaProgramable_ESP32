@@ -44,3 +44,21 @@ Para entrar en modo Depuración se debe:
     ![debug4](./imágenes/debug4.png)
 	
 ## Monitor Serie
+El `ESP-IDF Monitor` permite imprimir por pantalla mensajes enviados desde el microcontrolador, que pueden ser de utilidad para la verificación del funcionamiento de un programa.
+En el mismo se muestran los mensajes enviados utilizando las funciones `printf()` o `ESP_LOG()`. 
+
+1. Conecte la placa ESP32-C6-DevKitC-1 a su computadora utilizando un cable USB-C en el conector señalado como `UART`.
+
+    ![monitor1](./imágenes/monitor1.png)
+
+2. Seleccione el puerto `COM` correspondiente a la placa.
+
+    > **NOTA:** El número del puerto `COM` es asignado por su sistema operativo al momento de conectar la placa por primera vez, por lo tanto puede variar de un dispositivo a otro. 
+    
+	![monitor2](./imágenes/monitor2.png)
+
+3. Presione el botón `ESP-IDF Monitor device`. Se abrirá un nuevo terminal llamado `ESP-IDF monitor` donde se mostrarán los mensajes enviados.
+     
+	 > **NOTA:** Al ejecutar el `Monitor` el microcontrolador se reinicia, por lo tanto los mensajes mostrados parten desde el inicio de la ejecución del programa grabado.
+    
+    ![monitor3](./imágenes/monitor3.png)
